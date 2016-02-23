@@ -254,6 +254,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler
   capybara
   coffee-rails (~> 4.1.0)
   coveralls
