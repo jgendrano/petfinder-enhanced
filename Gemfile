@@ -25,9 +25,10 @@ end
 group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
   gem 'capybara'
   gem 'launchy'
-  gem 'factory_girl'
+  # gem 'factory_girl'
   gem 'valid_attribute'
   gem 'shoulda-matchers', require: false
   gem "dotenv-rails"
