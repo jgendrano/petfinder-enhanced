@@ -21,8 +21,12 @@ scenario "User provides valid information" do
     click_link "Sign Up"
     fill_in "User Name", with: "testuser"
     fill_in "Email", with: "foo@bar.com"
+    fill_in "Phone Number", with: "1234567890"
+    fill_in "Security Question", with: "What is your Veterinarian's Name?"
+    fill_in "Answer", with: "Smith"
     fill_in "Password", with: "password"
     fill_in "Password confirmation", with: "password"
+
     click_button "Sign up"
 
     expect(page).to have_content("You have signed up successfully.")

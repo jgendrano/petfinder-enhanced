@@ -4,6 +4,9 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.string :username,           null: false
       t.string :email,              null: false
       t.string :encrypted_password, null: false
+      t.string :phone_number,       null: false
+      t.string :security_question,  null: false
+      t.string :security_answer,    null: false
 
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at
